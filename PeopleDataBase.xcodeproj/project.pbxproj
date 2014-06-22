@@ -10,6 +10,7 @@
 		EA86B7FA1957494900538DC5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA86B7F91957494900538DC5 /* Foundation.framework */; };
 		EA86B7FD1957494900538DC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA86B7FC1957494900538DC5 /* main.m */; };
 		EA86B8011957494900538DC5 /* PeopleDataBase.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = EA86B8001957494900538DC5 /* PeopleDataBase.1 */; };
+		EA86B80919578E7600538DC5 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = EA86B80819578E7600538DC5 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		EA86B7FC1957494900538DC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EA86B7FF1957494900538DC5 /* PeopleDataBase-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PeopleDataBase-Prefix.pch"; sourceTree = "<group>"; };
 		EA86B8001957494900538DC5 /* PeopleDataBase.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = PeopleDataBase.1; sourceTree = "<group>"; };
+		EA86B80719578E7600538DC5 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		EA86B80819578E7600538DC5 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +51,8 @@
 		EA86B7ED1957494900538DC5 = {
 			isa = PBXGroup;
 			children = (
+				EA86B80719578E7600538DC5 /* Person.h */,
+				EA86B80819578E7600538DC5 /* Person.m */,
 				EA86B7FB1957494900538DC5 /* PeopleDataBase */,
 				EA86B7F81957494900538DC5 /* Frameworks */,
 				EA86B7F71957494900538DC5 /* Products */,
@@ -139,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA86B80919578E7600538DC5 /* Person.m in Sources */,
 				EA86B7FD1957494900538DC5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

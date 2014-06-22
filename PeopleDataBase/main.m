@@ -7,27 +7,30 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Person.h"
 
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
-        int x = 10;
-        NSString *myString = [NSString stringWithFormat:@"The variable x stores the number %i", x];
-        NSLog(@"%@", myString);
+        char response;
+        NSMutableArray *people = [[NSMutableArray alloc] init];
         
-        NSLog(@"Please enter a word.");
+        do {
+            Person *newPerson = [[Person alloc] init];
+            
+            [newPerson enterInfo];
+            [newPerson printInfo];
+            [people addObject:newPerson];
+            
+            NSLog(@"Do you want to enter another name? (y/n)");
+            scanf("\n%c", &response);
+        } while(response == 'y');
         
-        // 1
-        char cstring[40];
-        
-        // 2
-        scanf("%s",cstring);
-        
-        // 3
-        NSString *inputString = [NSString stringWithCString:cstring encoding:1];
-        
-        NSLog(@"You entered the word '%@' and it is %li characters long", inputString, [inputString length]);
+        NSLog(@"Number of people in the database: %li", [people count]);
+        for (Person *onePerson in people) {
+            [onePerson printInfo];
+        }
     }
     return 0;
 }
