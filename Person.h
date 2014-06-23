@@ -12,6 +12,10 @@
     NSString *firstName;
     NSString *lastName;
     int age;
+    
+    NSString *pet;
+    NSString *petName;
+    int petResponse;
 }
 
 - (void)enterInfo;
